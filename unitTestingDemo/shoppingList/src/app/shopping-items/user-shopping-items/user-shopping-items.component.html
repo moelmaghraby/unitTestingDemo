@@ -1,0 +1,71 @@
+
+<div class="col-md-8 offset-2" >
+  <h1>Your Shopping Items</h1>
+  <table class="table">
+    <thead class="h">
+      <tr class="h">
+        <th class="h">Description</th>
+        <th class="h">Status</th>
+        <th class="h">Price</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr  hoverdirective  *ngFor="let item of items" >
+
+        <ng-container *ngIf="!editItems.includes(item); else editItem">
+          <td>{{item.description}}</td>
+          <td>{{item.status}}</td>
+          <td>{{item.price | currencyPipe}}</td>
+        </ng-container>
+
+        <ng-template #editItem>
+          <td><input type="text" name="description" id="description"  [(ngModel)]="item.description" placeholder="description" class="form-control"></td>
+          <td><input type="text" name="status" id="status"  [(ngModel)]="item.status" placeholder="Status"
+              class="form-control"></td>
+          <td>
+            <input type="number" name="price" id="price" [(ngModel)]="item.price" placeholder="Price" class="form-control">
+          </td>
+      </ng-template>
+        
+
+
+        <td class="o">
+          <button class="btn btn-success" (click)="saveItem(item)">
+            <i  class="fa fa-check"></i>
+          </button>
+          <button class="btn btn-primary" (click)="edit(item)">
+              <i  class="fa fa-pencil"></i>
+            </button>
+          <button class="btn btn-danger" (click)="deleteitem(item)">
+              <i  class="fa fa-trash"></i>
+            </button>
+        </td>
+
+      </tr>
+
+    </tbody>
+  </table>
+
+  <table class="table">
+    <tbody> 
+        <tr>
+      <form [formGroup]="newItemForm">
+        
+            <td><input type="text" formControlName="description"   placeholder="description" class="form-control"></td>
+            <td><input type="text" formControlName="status"   placeholder="Status"
+                class="form-control"></td>
+            <td>
+              <input type="number" formControlName="price"  placeholder="Price" class="form-control">
+            </td>
+            <td class="o">
+              <button class="btn btn-success" (click)="addItem(item)">
+                Add
+              </button>
+            </td>
+          </form>
+        </tr>
+    </tbody>
+  </table>
+
+</div>

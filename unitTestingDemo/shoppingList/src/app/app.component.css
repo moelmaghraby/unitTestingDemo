@@ -1,0 +1,11 @@
+.btn{
+    cursor: pointer;
+}
+
+td{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.m-top{
+    margin-top: 70px;
+}

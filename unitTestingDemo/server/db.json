@@ -1,0 +1,191 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Maghraby"
+    },
+    {
+      "id": 2,
+      "name": "Shiref"
+    },
+    {
+      "id": 3,
+      "name": "Islam"
+    },
+    {
+      "id": 4,
+      "name": "Ramez"
+    }
+  ],
+  "shoppingItems": [
+    {
+      "id": 1,
+      "userId": 1,
+      "description": "Buy Vpn Subscription",
+      "price": 2000,
+      "status": "toBuy"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "description": "Buy New GPU",
+      "price": 400,
+      "status": "Bought"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "description": "Buy A Bigger SSD",
+      "price": 230,
+      "status": "toBuy"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "description": "Buy New PSU",
+      "price": 120,
+      "status": "Bought"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "description": "Buy Development Keyboard",
+      "price": 50,
+      "status": "toBuy"
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "description": "Buy A New Sofa",
+      "price": 500,
+      "status": "toBuy"
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "description": "Buy a new 50 inch LCD",
+      "price": 2000,
+      "status": "toBuy"
+    },
+    {
+      "id": 8,
+      "userId": 2,
+      "description": "Buy Paint Buckets",
+      "price": 500,
+      "status": "Bought"
+    },
+    {
+      "id": 9,
+      "userId": 2,
+      "description": "Buy New Carpet",
+      "price": 200,
+      "status": "toBuy"
+    },
+    {
+      "id": 10,
+      "userId": 2,
+      "description": "Buy New Phone",
+      "price": 500,
+      "status": "Bought"
+    },
+    {
+      "id": 11,
+      "userId": 3,
+      "description": "Renew Humble Bundle Subscription",
+      "price": 50,
+      "status": "toBuy"
+    },
+    {
+      "id": 12,
+      "userId": 3,
+      "description": "Buy An Xbox",
+      "price": 400,
+      "status": "Bought"
+    },
+    {
+      "id": 13,
+      "userId": 3,
+      "description": "Buy The Witcher 3",
+      "price": 50,
+      "status": "Bought"
+    },
+    {
+      "id": 14,
+      "userId": 3,
+      "description": "Buy Minecraft Special Edition Xbox Controller",
+      "price": 100,
+      "status": "toBuy"
+    },
+    {
+      "id": 15,
+      "userId": 3,
+      "description": "Upgrade GPU Because The Xbox sucks",
+      "price": 400,
+      "status": "toBuy"
+    },
+    {
+      "id": 16,
+      "userId": 4,
+      "description": "Renew Gym Membership",
+      "price": 50,
+      "status": "toBuy"
+    },
+    {
+      "id": 17,
+      "userId": 4,
+      "description": "Buy New Headphones",
+      "price": 100,
+      "status": "Bought"
+    },
+    {
+      "id": 18,
+      "userId": 4,
+      "description": "Buy Supliments",
+      "price": 100,
+      "status": "toBuy"
+    },
+    {
+      "id": 19,
+      "userId": 4,
+      "description": "Buy New Dumbles",
+      "price": 100,
+      "status": "Bought"
+    },
+    {
+      "id": 20,
+      "userId": 4,
+      "description": "Upgrade Old PC To Go Back To Gaming",
+      "price": 1000,
+      "status": "toBuy"
+    },
+    {
+      "userId": 1,
+      "price": 10,
+      "description": "Buy Lauch",
+      "status": "toBuy",
+      "id": 21
+    }
+  ],
+  "tokens": [
+    {
+      "id": 1,
+      "userId": 1,
+      "token": "MaghrabyAuthToken"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "token": "ShirefAuthToken"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "token": "IslamAuthToken"
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "token": "RamezAuthToken"
+    }
+  ]
+}

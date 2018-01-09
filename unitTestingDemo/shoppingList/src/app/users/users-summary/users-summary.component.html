@@ -1,0 +1,25 @@
+<h1 class="col-md-8 offset-2">Users Summary</h1>
+<div class="col-md-8 offset-2">
+  <table class="table">
+    <thead class="h">
+      <tr class="h">
+        <th class="h">User</th>
+        <th class="h">Cost</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="todo"  *ngFor="let item of items">
+
+        
+          <td>{{item.user}}</td>
+          <td>{{item.cost | currencyPipe }}</td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="col-md-8 offset-2">
+  <button class="btn btn-primary" (click)="goToShoppingItems()">Go To Shopping Items</button>
+</div>

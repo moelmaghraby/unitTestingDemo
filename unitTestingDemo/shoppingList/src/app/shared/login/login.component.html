@@ -1,0 +1,5 @@
+<div class="col-md-6 offset-3 text-center" style="margin-top:10%;"> 
+  <input type="text" [(ngModel)]="userName" placeholder="userName" class="form-control">
+  <div *ngIf="showNotFound">User Wasn't Found</div>
+  <button class="btn btn-primary"  (click)="login()">Login</button>
+</div>
